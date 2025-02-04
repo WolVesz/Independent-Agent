@@ -1,0 +1,7 @@
+agency-swarm
+docker
+pydantic
+PyYAML
+requests
+python-dotenv
+pandas

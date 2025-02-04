@@ -1,0 +1,17 @@
+agent:
+  logs_folder: "./logs"
+  external_log_level: "DEBUG"      # e.g. DEBUG, INFO, WARNING
+  container_log_level: "INFO"
+  docs_folder: "./docs"
+
+  # Docker resource config for the Executor container
+  docker_resources:
+    cpu_shares: 2
+    memory_limit: "4g"
+    gpu_enabled: false
+
+  # Snippet Retry & Loop-Detection
+  max_snippet_retries: 3
+  loop_detection_count: 3
+  # If the same snippet code fails repeatedly or we suspect a loop,
+  # we can escalate to Planner for a different plan or abort.
